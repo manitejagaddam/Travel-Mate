@@ -1,0 +1,295 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  body{
+    background-color: #111;
+  }
+  
+  .pointer{
+         
+    height: 18px;
+    width: 18px;
+    background-color: #bfd200;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: all cubic-bezier(.15,.58,.26,.95) 1s;
+    mix-blend-mode: difference;
+    z-index: 999;
+    transform: scale(2px,2px);
+  }
+  
+  
+  
+  
+  .pointer2{
+       
+    width: 12vw;
+    height: 12vw;
+    background-color: #bfd200;
+    position: absolute;
+    z-index: 999;
+    border-radius: 50%;
+    filter: blur(130px);
+  }
+  
+  
+  
+  .main {
+    min-height: 10vh;
+    min-width: 100vw;
+  }
+  
+  
+  
+  
+  .nav_bar {
+    width: 100vw;
+    height: 4vw;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #000;
+  
+  }
+  
+  .logo{
+       
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: invert(1);
+  }
+  
+  .logo img {
+    width: 160px;
+    height: 50px;
+    margin: 0px 0.5vw;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  
+  .nav_list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nav_list a {
+    padding: 0px 2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+  
+  .search_bar {
+    width: 28vw;
+    background-color: white;
+    height: 2.5vw;
+    padding-left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  
+  .search_bar input {
+    border: none;
+    width: 25vw;
+  }
+  
+  .search_bar i {
+    background-color: #ffbe0b;
+    height: 100%;
+    padding: 0px 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .imgLogo {
+    filter: invert(1);
+    width: 10px;
+    height: 60px;
+    margin-left: 30px;
+  }
+  
+  .user_logo {
+    background-color: white;
+    height: 2.3rem;
+    width: 2.3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+  }
+  
+  
+  
+  
+  
+/* Global styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #111;
+    color: #111;
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #111 ;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.booking-section {
+    background-color: #111;
+    border-radius: 10px;
+    color: white;
+    filter: invert(-1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+    border-color: #555;
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+.booking-section {
+    /* Your existing styles */
+
+    /* Add the following */
+    height: auto; /* Change height to auto */
+    transition: height 0.3s ease; /* Add transition for smooth height change */
+}
+
+/* Add this rule to hide forms initially */
+.booking-section form {
+    display: none;
+}
+
+/* Add this rule to show forms when the parent section is clicked */
+.booking-section.show-form form {
+    display: block;
+}
+
+
+.booking-section img{
+  filter: invert(1);
+}

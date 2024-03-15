@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="chatbox">
+            <a href="/chat/index.html"><i class="fa-solid fa-comments"></i></a>
+        </div>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="/images/nav logo.png" alt="logo">
+            </div>
+            <div class="nav_list">
+                <a href="/final/Home Page/index.html">Home</a>
+                <a href="/bookings/book.html">Bookings</a>
+                <a href="/maps/maps.html">Maps</a>
+                <a href="/companion/companion.html">Companion</a>
+            </div>
+            <div class="search_bar">
+                <input type="text" placeholder="Search Here" class="searchTxt">
+
+                <i class="fa-solid fa-magnifying-glass  searchBtn"></i>
+            </div>
+            <div class="user_logo">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="icon-list">
+      <section id="flight" class="booking-section">
+          <h2><img width="50" height="50" src="https://img.icons8.com/ios/50/airplane-take-off.png" alt="airplane-take-off" /> </h2>
+          <section>
+              <h2>Flights</h2>
+              <form>
+                  <label for="fromFlight">From:</label>
+                  <input type="text" id="fromFlight" name="fromFlight">
+                  <label for="toFlight">To:</label>
+                  <input type="text" id="toFlight" name="toFlight">
+                  <label for="dateFlight">Date:</label>
+                  <input type="date" id="dateFlight" name="dateFlight">
+                  <button type="submit">Search</button>
+              </form>
+          </section>
+      </section>
+      <!-- Flight booking form -->
+      
+      <section id="train" class="booking-section">
+          <h2><img width="50" height="50" src="https://img.icons8.com/ios/50/train.png" alt="train" /></h2>
+          <section>
+              <h2>Trains</h2>
+              <form>
+                  <label for="fromTrain">From:</label>
+                  <input type="text" id="fromTrain" name="fromTrain">
+                  <label for="toTrain">To:</label>
+                  <input type="text" id="toTrain" name="toTrain">
+                  <label for="dateTrain">Date:</label>
+                  <input type="date" id="dateTrain" name="dateTrain">
+                  <button type="submit">Search</button>
+              </form>
+          </section>
+      </section>
+      <!-- Train booking form -->
+      
+      <section id="hotels" class="booking-section">
+          <h2><img width="50" height="50" src="https://img.icons8.com/ios/50/5-star-hotel--v2.png"/> </h2>
+          <section>
+              <h2>Accommodation</h2>
+              <form>
+                  <label for="locationHotel">Location:</label>
+                  <input type="text" id="locationHotel" name="locationHotel">
+                  <label for="checkinHotel">Check-in:</label>
+                  <input type="date" id="checkinHotel" name="checkinHotel">
+                  <label for="checkoutHotel">Check-out:</label>
+                  <input type="date" id="checkoutHotel" name="checkoutHotel">
+                  <button type="submit">Search</button>
+              </form>
+          </section>
+      </section>
+      <!-- Accommodation booking form -->
+      
+      <section id="rentals" class="booking-section">
+          <h2><img width="50" height="50" src="https://img.icons8.com/ios/50/5-star-hotel--v2.png"/> </h2>
+          <section>
+              <h2>Rentals</h2>
+              <form>
+                  <label for="locationRental">Location:</label>
+                  <input type="text" id="locationRental" name="locationRental">
+                  <label for="typeRental">Type:</label>
+                  <input type="text" id="typeRental" name="typeRental">
+                  <label for="checkinRental">Check-in:</label>
+                  <input type="date" id="checkinRental" name="checkinRental">
+                  <label for="checkoutRental">Check-out:</label>
+                  <input type="date" id="checkoutRental" name="checkoutRental">
+                  <button type="submit">Search</button>
+              </form>
+          </section>
+      </section>
+      <!-- Rentals booking form -->
+  </div>
+  
+      <section id="hotels-list" class="hidden">
+          <!-- Hotel cards will be dynamically added here -->
+      </section>
+  </div>
+  
+</div>
+    
+ 
+  <!-- <footer>
+    <p>&copy; 2024 Travel Booking</p>
+  </footer> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+ <script src="book.js"></script>
+
+</body>
+
+</html>
